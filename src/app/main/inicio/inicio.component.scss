@@ -1,7 +1,12 @@
 .sessao-destaque {
   height: 1081px;
   padding-top: 130px;
-  background: transparent linear-gradient(120deg, #08103D 0%, #27C56C 100%) 0% 0% no-repeat padding-box;
+  background-image: url(../../../assets/img/desenho-topo.svg);
+  background-image: url(../../../assets/img/desenho-topo.svg), linear-gradient(120deg, #08103D 0%, #27C56C 100%);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
   color: #ffffff;
 }
 
@@ -20,4 +25,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5.5rem;
+}
+
+.destaque {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
 }

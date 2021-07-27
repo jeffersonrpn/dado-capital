@@ -9,7 +9,7 @@ body {
   padding-top: 73px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h6 {
   text-transform: uppercase;
 }
 
@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5,h6 {
   text-transform: uppercase;
 }
 
-.card-text {
-  color: #577AA8;
+.sessao-b {
+  background-color: $gray-100;
+}
+
+.card-titulo {
+  text-transform: uppercase;
 }
