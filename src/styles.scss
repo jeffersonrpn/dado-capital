@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "assets/bootstrap/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  min-height: 75rem;
+  padding-top: 73px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: #577AA8;
+}
