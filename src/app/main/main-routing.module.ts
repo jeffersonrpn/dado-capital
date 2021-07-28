@@ -8,7 +8,7 @@ const routes: Routes = [
     redirectTo: 'inicio'
   },
   {
-    path: 'inicio',
+    path: ':page',
     component: InicioComponent
   }
 ];

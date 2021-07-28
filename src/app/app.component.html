@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a
-      class="navbar-brand"
-      href="#">
+      routerLink="/inicio"
+      class="navbar-brand">
       <img
         src="assets/img/dado-capital-logo.png"
         alt="Dado Capital"
@@ -25,30 +25,41 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a
-            class="nav-link active"
-            aria-current="page"
-            href="#">
+            routerLink="/inicio"
+            routerLinkActive="active"
+            class="nav-link"
+            [attr.aria-current]="(rla.isActive) ? 'page' : null"
+            #rla="routerLinkActive">
             Início
           </a>
         </li>
         <li class="nav-item">
           <a
+            routerLink="/produtos"
+            routerLinkActive="active"
             class="nav-link"
-            href="#">
+            [attr.aria-current]="(rlb.isActive) ? 'page' : null"
+            #rlb="routerLinkActive">
             Produtos
           </a>
         </li>
         <li class="nav-item">
           <a
+            routerLink="/sobre"
+            routerLinkActive="active"
             class="nav-link"
-            href="#">
+            [attr.aria-current]="(rlc.isActive) ? 'page' : null"
+            #rlc="routerLinkActive">
             Sobre
           </a>
         </li>
         <li class="nav-item">
           <a
+            routerLink="/contato"
+            routerLinkActive="active"
             class="nav-link"
-            href="#">
+            [attr.aria-current]="(rld.isActive) ? 'page' : null"
+            #rld="routerLinkActive">
             Contato
           </a>
         </li>
