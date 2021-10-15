@@ -9,6 +9,9 @@ import { DOCUMENT } from '@angular/common';
 })
 export class AppComponent implements OnInit {
 
+  public clicked = false;
+  public navbarOpen = false;
+
   constructor(
     private router: Router,
     @Inject(DOCUMENT) private document: any) {}
@@ -30,6 +33,16 @@ export class AppComponent implements OnInit {
         }
       }
     });
+  }
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
+  onClick(event: any): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.clicked = true;
   }
 
 }
